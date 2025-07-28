@@ -1,0 +1,4 @@
+{
+    "githubPullRequests.experimental.useQuickChat": true,
+    "githubIssues.alwaysPromptForNewIssueRepo": true
+}
