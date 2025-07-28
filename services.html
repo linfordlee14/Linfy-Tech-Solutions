@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linfy Tech Solutions - Our Services</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect/Preload hints (Optional but can improve performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Note: Google Font import is handled within styles.css now -->
+</head>
+<body>
+    <!-- App Container for Flex Layout -->
+    <div class="app-container">
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator"></div>
+
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="header-container container-fluid px-lg-5 px-3"> <!-- Use Bootstrap container classes -->
+                 <a href="index.html" class="brand">
+                     <!-- Your SVG Logo -->
+                     <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 12.71L12 16.14l-3.5 1.57.98-4.11L6 10.12l4.11-.36L12 6l1.89 3.76L18 10.12l-3.48 2.48.98 4.11z"/></svg>
+                    <span>Linfy Tech</span>
+                </a>
+                <!-- Menu Toggle Button -->
+                 <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebarNav">
+                    <span class="icon-line line-1"></span>
+                    <span class="icon-line line-2"></span>
+                    <span class="icon-line line-3"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebarNav">
+            <ul class="nav-links">
+                 <!-- Active class will be handled by script.js -->
+                 <li><a href="index.html" class="nav-link">Home</a></li>
+                 <li><a href="services.html" class="nav-link">Services</a></li>
+                 <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                 <li><a href="about.html" class="nav-link">About Us</a></li>
+                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Theme Switch in Sidebar -->
+            <div class="theme-switch-container">
+                <span class="theme-switch-label">Appearance</span>
+                 <div class="theme-switch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
+                    <!-- Icons using Emoji -->
+                    <span class="icon" aria-hidden="true">☀️</span>
+                    <span class="icon" aria-hidden="true">🌙</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-container flex-grow-1">
+            <div class="content-wrapper container-xl"> <!-- Bootstrap container for content width -->
+
+                <!-- Page Header Card -->
+                <section class="page-header-card">
+                    <h1 class="page-title">How We Can Help</h1>
+                    <p class="intro-text">
+                        Linfy Tech Solutions provides expert, reliable services to keep your technology running smoothly and efficiently, whether at home or for your business.
+                    </p>
+                </section>
+
+                <!-- Services Section -->
+                <section class="page-section services-section">
+                    <div class="section-heading">
+                        <h2>Our Core Services</h2>
+                        <p>Explore our range of technical services designed to solve problems and enhance your digital experience.</p>
+                    </div>
+
+                    <!-- Bootstrap Grid for Services -->
+                    <div class="row g-xl-4 g-lg-4 g-md-4 g-4 justify-content-center">
+                        <!-- Service Card 1: Device Repairs -->
+                        <div class="col-md-6 col-lg-6 d-flex align-items-stretch"> <!-- Use align-items-stretch for equal height -->
+                            <div class="service-card w-100"> <!-- Removed inline animation delay, handled by JS now -->
+                                <!-- SVG Icon: Repair Tool -->
+                                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                     <path d="M15.525.812a.5.5 0 0 1 .225.65L8.7 15.85a.5.5 0 0 1-.9.05L6.9 11l-4.85-.9a.5.5 0 0 1 .05-.9L14.875.587a.5.5 0 0 1 .65.225zM2.5 10.85l3.4-.65L11 2.4 13.6 5l-7.75 5.45-1.6 3.2.25-.25z"/>
+                                     <path d="M10.5 3.9l-.85.85L12.8 7.9l.85-.85a1 1 0 0 0 0-1.4l-.6-.6a1 1 0 0 0-1.4 0z"/>
+                                </svg>
+                                <h3>Device Repairs</h3>
+                                <p>Expert diagnosis and repair for laptops, desktops, mobiles, and tablets. We use quality parts for lasting performance.</p>
+                                <ul class="service-benefits mt-auto"> <!-- mt-auto pushes benefits to bottom -->
+                                    <li>Fast Turnaround Times</li>
+                                    <li>Component-Level Fixes</li>
+                                    <li>Warranty on Repairs</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 2: Data Backup & Recovery -->
+                        <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                            <div class="service-card w-100">
+                                <!-- SVG Icon: Cloud Backup/Recovery -->
+                                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                    <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                    <path d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+                                </svg>
+                                <h3>Data Backup & Recovery</h3>
+                                <p>Secure your critical data with robust backup strategies and recover lost files efficiently from various storage media.</p>
+                                 <ul class="service-benefits mt-auto">
+                                    <li>Automated & Manual Backups</li>
+                                    <li>Disaster Recovery Planning</li>
+                                    <li>Confidential Data Handling</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 3: Eco-Friendly Solutions -->
+                        <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                            <div class="service-card w-100">
+                                 <!-- SVG Icon: Leaf/Recycle -->
+                                 <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                     <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-4.905-6-10-4.878 5.095-6 8.345-6 10a6 6 0 0 0 6 6zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                     <path d="M8 1a7 7 0 0 1 7 7c0 1.96-.946 5.428-7 11.428C1.946 13.428 1 8.96 1 8a7 7 0 0 1 7-7zm0 5a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                                </svg>
+                                <h3>Eco-Friendly Solutions</h3>
+                                <p>Adopt sustainable IT. We help implement energy-efficient hardware, responsible e-waste disposal, and green computing practices.</p>
+                                <ul class="service-benefits mt-auto">
+                                    <li>Reduced Energy Consumption</li>
+                                    <li>Responsible Recycling Programs</li>
+                                    <li>Sustainable Technology Advice</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 4: Business IT Support -->
+                        <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                            <div class="service-card w-100">
+                                <!-- SVG Icon: Cog/Support -->
+                                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.056 4.37l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159A1.873 1.873 0 0 0 7.163 1.626l.094-.319z"/>
+                                </svg>
+                                <h3>Business IT Support</h3>
+                                <p>Reliable, proactive IT support tailored for small to medium businesses. We manage your systems so you can focus on growth.</p>
+                                <ul class="service-benefits mt-auto">
+                                    <li>Remote & On-Site Assistance</li>
+                                    <li>Network Management</li>
+                                    <li>Proactive Monitoring & Maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testimonials Section -->
+                <section class="page-section testimonials-section">
+                     <div class="section-heading">
+                        <h2>What Our Clients Say</h2>
+                        <p>We pride ourselves on delivering excellent service. Hear directly from those we've helped.</p>
+                    </div>
+                     <!-- Bootstrap Grid for Testimonials -->
+                     <div class="row g-lg-4 g-md-4 g-4 justify-content-center">
+                         <!-- Testimonial Card 1 -->
+                         <div class="col-lg-5 col-md-6 d-flex align-items-stretch">
+                             <div class="testimonial-card w-100">
+                                 <!-- SVG Icon: Quote -->
+                                 <svg class="testimonial-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="32" height="32">
+                                   <path d="M12 12.766c1.645 0 3-1.34 3-3.002 0-1.174-.614-2.17-1.592-2.668.37-.37.637-.87.754-1.415.118-.545.08-1.148-.11-1.688-.19-.54-.556-1.01-1.046-1.358-.49-.348-1.08-.516-1.708-.516-.74 0-1.39.204-1.91.608-.52.403-.848 1.007-.918 1.747-.07.74.17 1.43.61 1.95.44.52 1.05.82 1.75.82.02 0 .04 0 .06-.002-.018.298-.044.59-.078.87-.123.994-.39 1.874-.774 2.638-.068.133-.107.28-.107.428 0 .346.28.626.626.626h1.387zm-8 0c1.645 0 3-1.34 3-3.002 0-1.174-.614-2.17-1.592-2.668.37-.37.637-.87.754-1.415.118-.545.08-1.148-.11-1.688-.19-.54-.556-1.01-1.046-1.358-.49-.348-1.08-.516-1.708-.516-.74 0-1.39.204-1.91.608-.52.403-.848 1.007-.918 1.747-.07.74.17 1.43.61 1.95.44.52 1.05.82 1.75.82.02 0 .04 0 .06-.002-.018.298-.044.59-.078.87-.123.994-.39 1.874-.774 2.638-.068.133-.107.28-.107.428 0 .346.28.626.626.626h1.387z"/>
+                                </svg>
+                                <blockquote>
+                                    <p>"Linfy Tech's repair service was incredibly fast and professional. My laptop runs better than new!"</p>
+                                    <footer>Happy Customer</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                         <!-- Testimonial Card 2 -->
+                         <div class="col-lg-5 col-md-6 d-flex align-items-stretch">
+                             <div class="testimonial-card w-100">
+                                  <!-- SVG Icon: Quote -->
+                                 <svg class="testimonial-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="32" height="32">
+                                     <path d="M12 12.766c1.645 0 3-1.34 3-3.002 0-1.174-.614-2.17-1.592-2.668.37-.37.637-.87.754-1.415.118-.545.08-1.148-.11-1.688-.19-.54-.556-1.01-1.046-1.358-.49-.348-1.08-.516-1.708-.516-.74 0-1.39.204-1.91.608-.52.403-.848 1.007-.918 1.747-.07.74.17 1.43.61 1.95.44.52 1.05.82 1.75.82.02 0 .04 0 .06-.002-.018.298-.044.59-.078.87-.123.994-.39 1.874-.774 2.638-.068.133-.107.28-.107.428 0 .346.28.626.626.626h1.387zm-8 0c1.645 0 3-1.34 3-3.002 0-1.174-.614-2.17-1.592-2.668.37-.37.637-.87.754-1.415.118-.545.08-1.148-.11-1.688-.19-.54-.556-1.01-1.046-1.358-.49-.348-1.08-.516-1.708-.516-.74 0-1.39.204-1.91.608-.52.403-.848 1.007-.918 1.747-.07.74.17 1.43.61 1.95.44.52 1.05.82 1.75.82.02 0 .04 0 .06-.002-.018.298-.044.59-.078.87-.123.994-.39 1.874-.774 2.638-.068.133-.107.28-.107.428 0 .346.28.626.626.626h1.387z"/>
+                                </svg>
+                                <blockquote>
+                                    <p>"The business support plan has been invaluable. Knowing our IT is proactively managed gives us real peace of mind."</p>
+                                    <footer>Business Owner</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Call to Action Section -->
+                <section class="page-section cta-section-wrapper">
+                     <div class="cta-section">
+                        <h3>Ready to Solve Your Tech Issues?</h3>
+                        <p>Contact us today for a consultation or quote, and let Linfy Tech Solutions provide the expert help you need.</p>
+                        <a href="contact.html" class="cta-btn">Get in Touch</a>
+                    </div>
+                </section>
+
+            </div> <!-- End .content-wrapper -->
+        </main>
+
+        <!-- Site Footer -->
+        <footer class="site-footer mt-auto"> <!-- mt-auto pushes footer down -->
+            <div class="container"> <!-- Bootstrap container for footer content -->
+                <div class="copyright">
+                    © <span id="current-year"></span> Linfy Tech Solutions. Driven by technology, guided by service.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+<button class="back-to-top" aria-label="Back to Top" title="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg>
+</button>
+    </div> <!-- End .app-container -->
+
+    <!-- Link to External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
