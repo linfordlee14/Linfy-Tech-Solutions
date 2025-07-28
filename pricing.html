@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linfy Tech Solutions - Pricing Plans</title> <!-- Updated Title -->
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect/Preload hints (Optional but can improve performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Note: Google Font import is handled within styles.css -->
+</head>
+<body>
+    <!-- App Container for Flex Layout -->
+    <div class="app-container">
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator"></div>
+
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="header-container container-fluid px-lg-5 px-3"> <!-- Use Bootstrap container classes -->
+                 <a href="index.html" class="brand">
+                     <!-- Your SVG Logo -->
+                     <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 12.71L12 16.14l-3.5 1.57.98-4.11L6 10.12l4.11-.36L12 6l1.89 3.76L18 10.12l-3.48 2.48.98 4.11z"/></svg>
+                    <span>Linfy Tech</span>
+                </a>
+                <!-- Menu Toggle Button -->
+                 <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebarNav">
+                    <span class="icon-line line-1"></span>
+                    <span class="icon-line line-2"></span>
+                    <span class="icon-line line-3"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebarNav">
+            <ul class="nav-links">
+                 <!-- Active class will be handled by script.js -->
+                 <li><a href="index.html" class="nav-link">Home</a></li>
+                 <li><a href="services.html" class="nav-link">Services</a></li>
+                 <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                 <li><a href="about.html" class="nav-link">About Us</a></li>
+                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Theme Switch in Sidebar -->
+            <div class="theme-switch-container">
+                <span class="theme-switch-label">Appearance</span>
+                 <div class="theme-switch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
+                    <!-- Icons using Emoji -->
+                    <span class="icon" aria-hidden="true">☀️</span>
+                    <span class="icon" aria-hidden="true">🌙</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-container flex-grow-1">
+            <div class="content-wrapper container-xl"> <!-- Bootstrap container for content width -->
+
+                <!-- Page Header Card -->
+                <section class="page-header-card">
+                    <h1 class="page-title">Pricing Plans</h1>
+                    <p class="intro-text">
+                        At Linfy Tech Solutions, we offer a variety of transparent pricing plans designed to suit your specific technical needs and budget. Explore our packages below.
+                    </p>
+                </section>
+
+                <!-- Pricing Section -->
+                <section class="page-section pricing-section">
+                    <!-- Optional Section Heading (uncomment if desired) -->
+                    <!--
+                    <div class="section-heading">
+                        <h2>Choose Your Plan</h2>
+                        <p>Select the package that best fits your requirements.</p>
+                    </div>
+                    -->
+
+                    <!-- Bootstrap Grid for Pricing Plans -->
+                    <div class="row g-xl-4 g-lg-4 g-md-4 g-4 justify-content-center">
+
+                        <!-- Pricing Plan 1: Basic Repairs -->
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="service-card w-100"> <!-- Re-use service-card styling -->
+                                <!-- SVG Icon: Basic Tools -->
+                                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                  <path d="M15.525.812a.5.5 0 0 1 .225.65L8.7 15.85a.5.5 0 0 1-.9.05L6.9 11l-4.85-.9a.5.5 0 0 1 .05-.9L14.875.587a.5.5 0 0 1 .65.225zM2.5 10.85l3.4-.65L11 2.4 13.6 5l-7.75 5.45-1.6 3.2.25-.25z"/>
+                                  <path d="M10.5 3.9l-.85.85L12.8 7.9l.85-.85a1 1 0 0 0 0-1.4l-.6-.6a1 1 0 0 0-1.4 0z"/>
+                                </svg>
+                                <h3>Basic Repairs</h3>
+                                <p>Ideal for common issues and routine maintenance to keep your devices running smoothly.</p>
+                                <ul class="service-benefits mt-auto">
+                                    <li>Screen Repairs</li>
+                                    <li>Software Updates & Troubleshooting</li>
+                                    <li>Minor Hardware Fixes</li>
+                                    <li><strong>Price: From R350</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Plan 2: Advanced Repairs -->
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="service-card w-100">
+                                <!-- SVG Icon: Chip/Advanced Tech -->
+                                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                  <path d="M4 4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4zm2 1h4v4H6V5z"/>
+                                </svg>
+                                <h3>Advanced Repairs</h3>
+                                <p>For more complex problems including hardware failures and data recovery services.</p>
+                                <ul class="service-benefits mt-auto">
+                                    <li>Hardware Replacement (Motherboard, etc.)</li>
+                                    <li>Data Recovery Services</li>
+                                    <li>Complex Diagnostic Fixes</li>
+                                    <li><strong>Price: From R750</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Plan 3: Business Support -->
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="service-card w-100">
+                                 <!-- SVG Icon: Building/Briefcase -->
+                                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                  <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                                </svg>
+                                <h3>Business Support</h3>
+                                <p>Comprehensive IT support and maintenance packages designed for small to medium businesses.</p>
+                                <ul class="service-benefits mt-auto">
+                                    <li>Managed IT Services</li>
+                                    <li>Network Setup & Security</li>
+                                    <li>Proactive System Maintenance</li>
+                                    <li><strong>Price: From R1500/month</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div> <!-- End .row -->
+                </section>
+
+                 <!-- Call to Action Section (Consistent with services.html) -->
+                <section class="page-section cta-section-wrapper">
+                     <div class="cta-section">
+                        <h3>Need a Custom Solution?</h3>
+                        <p>If our standard plans don't quite fit, contact us for a personalized quote tailored to your unique requirements.</p>
+                        <a href="contact.html" class="cta-btn">Request a Quote</a>
+                    </div>
+                </section>
+
+            </div> <!-- End .content-wrapper -->
+        </main>
+
+        <!-- Site Footer -->
+        <footer class="site-footer mt-auto"> <!-- mt-auto pushes footer down -->
+            <div class="container"> <!-- Bootstrap container for footer content -->
+                <div class="copyright">
+                    <!-- Updated Copyright Year -->
+                    © <span id="current-year"></span> Linfy Tech Solutions. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" aria-label="Back to Top" title="Back to Top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </button>
+    </div> <!-- End .app-container -->
+
+    <!-- Link to External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
